@@ -19,7 +19,7 @@ module.exports = {
             params.params.end_date = endDate;
         }
         console.log(params);
-        axios.get(process.env.BASEURL, params).then(function(data) {
+        axios.get("https://api.nytimes.com/svc/search/v2/articlesearch.json", params).then(function(data) {
           res.json(data.data.response.docs);
         }).catch(err => console.log(err));
       },
