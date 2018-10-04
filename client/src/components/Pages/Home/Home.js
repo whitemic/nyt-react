@@ -35,7 +35,6 @@ class Home extends Component {
         console.log(query, startYear, endYear);
           API.nytSearch(query, startYear, endYear)
             .then(res => {
-                const formattedData = res.data;
                 res.data.forEach(function(element, index){
                     const currentDate = element.pub_date;
                     const formattedDate = moment(currentDate).format("MMMM DD, YYYY");
