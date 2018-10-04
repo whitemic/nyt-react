@@ -13,8 +13,7 @@ class Home extends Component {
         articles: [],
         startYear: "",
         endYear: "",
-        query: "",
-        formattedDate: ""
+        query: ""
     }
 
     saveArticle = (title, date, url) => {
