@@ -19,7 +19,7 @@
     "nodemon": "^1.11.0"
   },
   "dependencies": {
-    "axios": "^0.16.2",
+    "axios": "^0.21.1",
     "body-parser": "^1.17.2",
     "cryptiles": "^4.1.2",
     "dotenv": "^6.0.0",
